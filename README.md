@@ -12,10 +12,6 @@
 - [Cara Kerja](#-cara-kerja)
 - [Quick Start](#-quick-start)
 - [Panduan Lengkap](#-panduan-lengkap)
-- [Bukti Blockchain](#-bukti-blockchain)
-- [FAQ](#-faq)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -198,8 +194,8 @@ Pastikan sudah terinstall:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/username/ticketing-blockchain.git
-cd ticketing-blockchain
+git clone https://github.com/kevinnstg/Blockchain-Ticketing-System.git
+cd Blockchain-Ticketing-System
 
 # 2. Install dependencies
 cd contracts && npm install

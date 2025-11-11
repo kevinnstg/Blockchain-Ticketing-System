@@ -24,8 +24,8 @@ Jika belum terinstall, download dan install Node.js dari: https://nodejs.org/
 
 ### Opsi A: Via Git Clone
 ```bash
-git clone https://github.com/username/ticketing-blockchain.git
-cd ticketing-blockchain
+git clone https://github.com/kevinnstg/Blockchain-Ticketing-System.git
+cd Blockchain-Ticketing-System
 ```
 
 ### Opsi B: Download ZIP

@@ -1,0 +1,24 @@
+{
+  "name": "ticketing-blockchain-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for blockchain ticketing system",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.0",
+    "ethers": "^6.9.0",
+    "dotenv": "^16.3.1"
+  }
+}

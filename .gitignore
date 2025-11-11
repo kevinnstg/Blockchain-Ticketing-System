@@ -1,0 +1,44 @@
+# Environment Variables
+**/.env
+**/.env.local
+!**/.env.example
+
+# Dependencies
+**/node_modules/
+**/package-lock.json
+
+# Build outputs
+**/.next/
+**/dist/
+**/build/
+
+# Hardhat
+**/artifacts/
+**/cache/
+**/typechain/
+**/typechain-types/
+deployment-info.json
+
+# Backend generated files
+backend/TicketRegistry.json
+
+# Contract artifacts in wrong location
+contracts/TicketRegistry.sol.bak
+
+# Deployment receipts
+**/receipt*.json
+
+# Local configuration
+**/config.local.js
+**/config.local.json
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+EOF

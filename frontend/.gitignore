@@ -1,0 +1,123 @@
+# ==========================================
+# NODE & NPM
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ==========================================
+# ENVIRONMENT VARIABLES (CRITICAL!)
+# ==========================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+!.env.example
+
+# ==========================================
+# HARDHAT
+# ==========================================
+cache/
+artifacts/
+coverage/
+coverage.json
+typechain/
+typechain-types/
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+# ==========================================
+# NEXT.JS
+# ==========================================
+.next/
+out/
+build/
+dist/
+
+# ==========================================
+# TESTING
+# ==========================================
+coverage/
+.nyc_output
+
+# ==========================================
+# MISC
+# ==========================================
+.DS_Store
+*.pem
+*.log
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
+
+# ==========================================
+# IDE
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# DEPLOYMENT INFO
+# ==========================================
+deployment-info.json
+
+# ==========================================
+# DATABASE
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# LOGS
+# ==========================================
+logs/
+*.log
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+tmp/
+temp/
+*.tmp
+
+# ==========================================
+# OS
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# SENSITIVE DATA (NEVER COMMIT!)
+# ==========================================
+*.key
+*.pem
+*_private_key*
+secrets/
+.secrets/

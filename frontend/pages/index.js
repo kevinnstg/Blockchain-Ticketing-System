@@ -64,7 +64,7 @@ export default function HomePage() {
                 <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-full px-6 py-2 border border-white border-opacity-20">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-sm text-white font-medium">
+                    <span className="text-sm font-medium bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
                       Connected to Blockchain
                     </span>
                   </div>
@@ -84,28 +84,28 @@ export default function HomePage() {
               
               <div className="relative">
                 {/* <div className="text-6xl mb-4">👔</div> */}
-                <h2 className="text-3xl font-bold text-purple-600 mb-3 text-center">
+                <h2 className="text-3xl font-bold text-purple-700 mb-3 text-center">
                   Dashboard Panitia
                 </h2>
-                <p className="text-purple-400 mb-6">
+                <p className="text-purple-500 mb-6">
                   Kelola event dan generate tiket. Panel untuk administrator dan event organizer.
                 </p>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-purple-400">
+                  <li className="flex items-center text-purple-500">
                     <span className="mr-2">✓</span>
                     Buat event baru
                   </li>
-                  <li className="flex items-center text-purple-400">
+                  <li className="flex items-center text-purple-500">
                     <span className="mr-2">✓</span>
                     Generate tiket batch
                   </li>
-                  <li className="flex items-center text-purple-400">
+                  <li className="flex items-center text-purple-500">
                     <span className="mr-2">✓</span>
                     Monitor statistik
                   </li>
                 </ul>
                 <div className="flex items-center justify-between">
-                  <span className="text-purple-400 font-semibold group-hover:translate-x-2 transition-transform">
+                  <span className="text-purple-500 font-semibold group-hover:translate-x-2 transition-transform">
                     Masuk Dashboard →
                   </span>
                   <div className="bg-blue-500 bg-opacity-20 rounded-full p-3 group-hover:bg-opacity-40 transition">
@@ -124,28 +124,28 @@ export default function HomePage() {
               
               <div className="relative">
                 {/* <div className="text-6xl mb-4">🚪</div> */}
-                <h2 className="text-3xl font-bold text-green-600 mb-3">
+                <h2 className="text-3xl font-bold text-green-600 mb-3 text-center">
                   Gate Verification
                 </h2>
-                <p className="text-green-600 mb-6">
+                <p className="text-green-500 mb-6">
                   Verifikasi tiket pengunjung. Panel untuk petugas gate dan security.
                 </p>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-green-600">
+                  <li className="flex items-center text-green-500">
                     <span className="mr-2">✓</span>
                     Verifikasi real-time
                   </li>
-                  <li className="flex items-center text-green-600">
+                  <li className="flex items-center text-green-500">
                     <span className="mr-2">✓</span>
                     Mark tiket used
                   </li>
-                  <li className="flex items-center text-green-600">
+                  <li className="flex items-center text-green-500">
                     <span className="mr-2">✓</span>
                     Riwayat verifikasi
                   </li>
                 </ul>
                 <div className="flex items-center justify-between">
-                  <span className="text-white font-semibold group-hover:translate-x-2 transition-transform">
+                  <span className="text-green-500 font-semibold group-hover:translate-x-2 transition-transform">
                     Buka Verifikasi →
                   </span>
                   <div className="bg-green-500 bg-opacity-20 rounded-full p-3 group-hover:bg-opacity-40 transition">
@@ -162,28 +162,28 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white bg-opacity-5 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-10">
               <div className="text-4xl mb-3">🔒</div>
-              <h3 className="text-xl font-bold text-white mb-2">
+              <h3 className="text-xl font-bold text-indigo-500 mb-2">
                 Anti-Pemalsuan
               </h3>
-              <p className="text-purple-200 text-sm">
+              <p className="text-indigo-400 text-sm">
                 Setiap tiket tercatat di blockchain dengan hash unik yang tidak dapat dipalsukan
               </p>
             </div>
             <div className="bg-white bg-opacity-5 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-10">
               <div className="text-4xl mb-3">⚡</div>
-              <h3 className="text-xl font-bold text-white mb-2">
+              <h3 className="text-xl font-bold text-purple-500 mb-2">
                 Real-time Verification
               </h3>
-              <p className="text-purple-200 text-sm">
+              <p className="text-purple-400 text-sm">
                 Verifikasi instant dengan query langsung ke smart contract blockchain
               </p>
             </div>
             <div className="bg-white bg-opacity-5 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-10">
               <div className="text-4xl mb-3">📝</div>
-              <h3 className="text-xl font-bold text-white mb-2">
+              <h3 className="text-xl font-bold text-pink-500 mb-2">
                 Immutable Records
               </h3>
-              <p className="text-purple-200 text-sm">
+              <p className="text-pink-400 text-sm">
                 Data tiket tersimpan permanen di blockchain dan tidak dapat diubah
               </p>
             </div>

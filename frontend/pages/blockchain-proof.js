@@ -83,14 +83,14 @@ export default function BlockchainProofPage() {
             <span>Kembali ke Home</span>
           </button>
           
-          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20">
+          <div className="bg-purple-100 bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20">
             <div className="flex items-center space-x-4 mb-4">
               <span className="text-5xl">🔗</span>
               <div>
-                <h1 className="text-3xl font-bold text-white">
+                <h1 className="text-3xl font-bold text-purple-800">
                   Bukti Blockchain
                 </h1>
-                <p className="text-purple-200">
+                <p className="text-purple-500">
                   Verifikasi transparansi data on-chain
                 </p>
               </div>
@@ -99,14 +99,14 @@ export default function BlockchainProofPage() {
         </div>
 
         {/* Smart Contract Info */}
-        <div className="bg-gradient-to-r from-blue-900 to-purple-900 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 border border-blue-500 border-opacity-30 mb-6">
+        <div className="bg-gradient-to-r from-blue-900 to-purple-900 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 border border-indigo-500 border-opacity-30 mb-6">
           <h2 className="text-xl font-bold text-white mb-4 flex items-center">
             <span className="mr-2">📜</span>
             Smart Contract Information
           </h2>
           
           <div className="space-y-3">
-            <div className="flex justify-between items-center bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="flex justify-between items-center bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div>
                 <div className="text-sm text-purple-300 mb-1">Contract Address</div>
                 <div className="font-mono text-white text-sm break-all">
@@ -121,7 +121,7 @@ export default function BlockchainProofPage() {
               </button>
             </div>
 
-            <div className="flex justify-between items-center bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="flex justify-between items-center bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div>
                 <div className="text-sm text-purple-300 mb-1">Network</div>
                 <div className="text-white font-medium">Ethereum Local Testnet (Hardhat)</div>
@@ -132,7 +132,7 @@ export default function BlockchainProofPage() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div className="text-sm text-purple-300 mb-1">RPC URL</div>
               <div className="font-mono text-white text-sm break-all">
                 {RPC_URL}
@@ -142,13 +142,13 @@ export default function BlockchainProofPage() {
         </div>
 
         {/* Live Verification Tool */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20 mb-6">
-          <h2 className="text-xl font-bold text-white mb-4 flex items-center">
+        <div className="bg-purple-100 bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20 mb-6">
+          <h2 className="text-xl font-bold text-purple-800 mb-4 flex items-center">
             <span className="mr-2">🔍</span>
             Live Blockchain Verification
           </h2>
           
-          <p className="text-purple-200 mb-4">
+          <p className="text-purple-500 mb-4">
             Masukkan Ticket ID untuk memverifikasi data langsung dari blockchain
           </p>
 
@@ -159,7 +159,7 @@ export default function BlockchainProofPage() {
               onChange={(e) => setTicketId(e.target.value.toUpperCase())}
               onKeyDown={(e) => e.key === 'Enter' && handleVerifyOnChain()}
               placeholder="EVENT-1-T-ABC12345"
-              className="flex-1 px-4 py-3 bg-black bg-opacity-30 border border-purple-500 border-opacity-30 rounded-lg text-white placeholder-purple-300 focus:outline-none focus:border-purple-500"
+              className="flex-1 px-4 py-3 bg-gray-900 bg-opacity-30 border border-purple-500 border-opacity-30 rounded-lg text-white placeholder-purple-300 focus:outline-none focus:border-purple-500"
             />
             <button
               onClick={handleVerifyOnChain}
@@ -182,35 +182,35 @@ export default function BlockchainProofPage() {
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="text-sm text-purple-300 mb-1">Ticket Hash (On-Chain Key)</div>
                   <div className="font-mono text-white text-xs break-all">
                     {verificationResult.ticket.ticketId}
                   </div>
                 </div>
 
-                <div className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="text-sm text-purple-300 mb-1">Owner Address</div>
                   <div className="font-mono text-white text-xs break-all">
                     {verificationResult.ticket.owner}
                   </div>
                 </div>
 
-                <div className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="text-sm text-purple-300 mb-1">Event ID (On-Chain)</div>
                   <div className="text-white font-bold text-lg">
                     #{verificationResult.ticket.eventId}
                   </div>
                 </div>
 
-                <div className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="text-sm text-purple-300 mb-1">Blockchain Timestamp</div>
                   <div className="text-white text-sm">
                     {formatTimestamp(verificationResult.ticket.timestamp)}
                   </div>
                 </div>
 
-                <div className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="text-sm text-purple-300 mb-1">Status (Immutable)</div>
                   <div className={`font-bold ${
                     verificationResult.ticket.used ? 'text-red-400' : 'text-green-400'
@@ -219,7 +219,7 @@ export default function BlockchainProofPage() {
                   </div>
                 </div>
 
-                <div className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="text-sm text-purple-300 mb-1">Validity Check</div>
                   <div className={`font-bold ${
                     verificationResult.ticket.isValid ? 'text-green-400' : 'text-red-400'
@@ -248,21 +248,21 @@ export default function BlockchainProofPage() {
 
         {/* Transaction History */}
         {txHistory.length > 0 && (
-          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20 mb-6">
-            <h2 className="text-xl font-bold text-white mb-4 flex items-center">
+          <div className="bg-purple-100 bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20 mb-6">
+            <h2 className="text-xl font-bold text-purple-800 mb-4 flex items-center">
               <span className="mr-2">📜</span>
               Recent Blockchain Queries
             </h2>
 
             <div className="space-y-3">
               {txHistory.map((tx, index) => (
-                <div key={index} className="bg-black bg-opacity-30 rounded-lg p-4">
+                <div key={index} className="bg-gray-900 bg-opacity-30 rounded-lg p-4">
                   <div className="flex justify-between items-start mb-2">
                     <div className="font-mono text-white text-sm">{tx.ticketId}</div>
                     <div className={`px-3 py-1 rounded-full text-xs font-bold ${
                       tx.result === 'Valid' 
-                        ? 'bg-green-500 bg-opacity-20 text-green-300'
-                        : 'bg-red-500 bg-opacity-20 text-red-300'
+                        ? 'bg-green-500 bg-opacity-20 text-green-200'
+                        : 'bg-red-500 bg-opacity-20 text-red-200'
                     }`}>
                       {tx.result}
                     </div>
@@ -277,14 +277,14 @@ export default function BlockchainProofPage() {
         )}
 
         {/* How It Works */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20">
-          <h2 className="text-xl font-bold text-white mb-4 flex items-center">
+        <div className="bg-purple-100 bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20">
+          <h2 className="text-xl font-bold text-purple-800 mb-4 flex items-center">
             <span className="mr-2">❓</span>
             Bagaimana Cara Membuktikan Ini Blockchain?
           </h2>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div className="flex items-start space-x-3">
                 <span className="text-2xl flex-shrink-0">1️⃣</span>
                 <div>
@@ -298,7 +298,7 @@ export default function BlockchainProofPage() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div className="flex items-start space-x-3">
                 <span className="text-2xl flex-shrink-0">2️⃣</span>
                 <div>
@@ -311,7 +311,7 @@ export default function BlockchainProofPage() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div className="flex items-start space-x-3">
                 <span className="text-2xl flex-shrink-0">3️⃣</span>
                 <div>
@@ -320,7 +320,7 @@ export default function BlockchainProofPage() {
                     Anda bisa query langsung ke blockchain tanpa backend. 
                     Coba gunakan Hardhat console atau web3.js:
                   </div>
-                  <div className="bg-black bg-opacity-50 rounded p-3 font-mono text-xs text-green-400 overflow-x-auto">
+                  <div className="bg-gray-900 bg-opacity-50 rounded p-3 font-mono text-xs text-green-400 overflow-x-auto">
                     npx hardhat console --network localhost<br/>
                     {'> const contract = await ethers.getContractAt("TicketRegistry", "' + (contractInfo?.contract || 'CONTRACT_ADDRESS') + '")'}<br/>
                     {'> await contract.getStats()'}
@@ -329,7 +329,7 @@ export default function BlockchainProofPage() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-20 rounded-lg p-4">
+            <div className="bg-gray-900 bg-opacity-20 rounded-lg p-4">
               <div className="flex items-start space-x-3">
                 <span className="text-2xl flex-shrink-0">4️⃣</span>
                 <div>

@@ -31,6 +31,11 @@ module.exports = {
       url: process.env.SEPOLIA_RPC_URL || "https://rpc.sepolia.org",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       chainId: 11155111
+    },
+    bnpi: {
+      url: "http://10.6.6.11:6102",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: 110261,
     }
   },
   paths: {

@@ -106,7 +106,7 @@ contract TicketRegistry {
         emit TicketTransferred(ticketHash, from, to);
     }
     
-    function getEvent(uint256 eventId) 
+    function getEventDetail(uint256 eventId) 
         external view 
         returns (string memory name, uint256 date, string memory location, bool active) 
     {

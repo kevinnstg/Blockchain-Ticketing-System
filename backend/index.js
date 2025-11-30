@@ -29,7 +29,7 @@ if (!CONTRACT_ADDRESS || !ADMIN_PRIVATE_KEY) {
 const provider = new ethers.JsonRpcProvider(RPC_URL);
 const wallet = new ethers.Wallet(ADMIN_PRIVATE_KEY, provider);
 const contract = new ethers.Contract(CONTRACT_ADDRESS, contractABI, wallet);
-
+contract.interface;
 // Menggunakan log startup yang lebih deskriptif (dari Kode 2)
 console.log('🔗 Connected to blockchain');
 console.log('📝 Contract Address:', CONTRACT_ADDRESS);
@@ -120,7 +120,7 @@ app.post('/api/events/create', async (req, res) => {
 app.get('/api/events/:eventId', async (req, res) => {
   try {
     const { eventId } = req.params;
-    const event = await contract.getEvent(eventId);
+    const event = await contract.getEventDetail(eventId);
 
     res.json({
       ok: true,
@@ -235,7 +235,7 @@ app.get('/api/tickets/verify/:ticketId', async (req, res) => {
     let eventDetails = null;
     if (ticketInfo.eventId) {
       try {
-        const event = await contract.getEvent(ticketInfo.eventId.toString());
+        const event = await contract.getEventDetail(ticketInfo.eventId.toString());
         eventDetails = {
           name: event[0],
           date: event[1].toString(),
